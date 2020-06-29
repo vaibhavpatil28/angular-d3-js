@@ -1,0 +1,50 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="offset-3 col-6" *ngIf="deviceInfoForm">
+            <form class="d-flex justify-content-center flex-column" [formGroup]="deviceInfoForm">
+                <div class="form-group">
+                    <label for="exampleInputDeviceId">Device Id</label>
+                    <input type="number" class="form-control" id="exampleInputDeviceId" aria-describedby="deviceIdHelp"
+                        placeholder="Device Id" formControlName="Device">
+                    <ng-container
+                        *ngIf="deviceInfoForm.get('Device') && deviceInfoForm.get('Device').invalid && (deviceInfoForm.get('Device').dirty || deviceInfoForm.get('Device').touched)">
+                        <div *ngIf="deviceInfoForm.hasError('required', 'Device')" class="error error-danger">
+                            This is required field.
+                        </div>
+                    </ng-container>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputChannelStatus">Channel</label>
+                    <input type="text" class="form-control" id="exampleInputChannelStatus"
+                        aria-describedby="channelStatusHelp"
+                        placeholder="Channel" formControlName="Channel">
+                    <ng-container
+                        *ngIf="deviceInfoForm.get('Channel') && deviceInfoForm.get('Channel').invalid && (deviceInfoForm.get('Channel').dirty || deviceInfoForm.get('Channel').touched)">
+                        <div *ngIf="deviceInfoForm.hasError('required', 'Channel')" class="error error-danger">
+                            This is required field.
+                        </div>
+                    </ng-container>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputDateTime">Date And Time</label>
+                    <input type="datetime-local" class="form-control" id="exampleInputDateTime"
+                        aria-describedby="dateTimeHelp"
+                        placeholder="Date And Time" formControlName="Time" step="2">
+                    <ng-container
+                        *ngIf="deviceInfoForm.get('Time') && deviceInfoForm.get('Time').invalid && (deviceInfoForm.get('Time').dirty || deviceInfoForm.get('Time').touched)">
+                        <div *ngIf="deviceInfoForm.hasError('required', 'Time')" class="error error-danger">
+                            This is required field.
+                        </div>
+                    </ng-container>
+                </div>
+                <ng-container
+                    *ngIf="deviceInfoForm && deviceInfoForm.invalid && (deviceInfoForm.dirty || deviceInfoForm.touched)">
+                    <div *ngIf="deviceInfoForm.hasError( 'uniqueValue')" class="error error-danger">
+                        {{deviceInfoForm.getError( 'uniqueValue')}}
+                    </div>
+                </ng-container>
+                <button type="button" class="btn btn-primary mx-auto" width="100px" (click)="save()">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>

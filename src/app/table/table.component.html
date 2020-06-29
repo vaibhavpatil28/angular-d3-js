@@ -1,0 +1,49 @@
+<div class="table-responsive v-scroll">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Sr.No.</th>
+                <th scope="col">Device</th>
+                <th scope="col">Channel</th>
+                <th scope="col">Time</th>
+                <th scope="col">Edit</th>
+                <th scope="col">Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="search">
+                <td></td>
+                <td>
+                    <input #deviceRef type="text" (keyup)="filter(deviceRef.value, 'Device')">
+                </td>
+                <td>
+                    <input #channelRef type="text" (keyup)="filter( channelRef.value,'Channel')">
+                </td>
+                <td>
+                    <input #timeRef type="text" (keyup)="filter(timeRef.value, 'Time')">
+                </td>
+            </tr>
+            <tr *ngFor="let row of tableDate | async; let i =index">
+                <td scope="row">{{i+1}}</td>
+                <td>{{row.Device}}</td>
+                <td>{{row.Channel}}</td>
+                <td>{{row.Time}}</td>
+                <td>
+                    <button id="edit" (click)="editClick(i, row)">
+                        <span class="material-icons">
+                            edit
+                        </span>
+                    </button>
+
+                </td>
+                <td>
+                    <button id="clear" (click)="delete(i)">
+                        <span class="material-icons">
+                            clear
+                            </span>
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

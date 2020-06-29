@@ -1,0 +1,119 @@
+{
+    "Sheet1": [
+        {
+            "Device": 1,
+            "Channel": "star",
+            "Time": "2020-6-27 20:39:28.0+5:30"
+        },
+        {
+            "Device": 1,
+            "Channel": "star",
+            "Time": "2020-6-28 21:39:28.0+5:30"
+        },
+        {
+            "Device": 1,
+            "Channel": "star",
+            "Time": "2020-6-27 19:39:28.0+5:30"
+        },
+        {
+            "Device": 1,
+            "Channel": "star",
+            "Time": "2020-6-27 19:10:28.0+5:30"
+        },
+        {
+            "Device": 1,
+            "Channel": "star",
+            "Time": "2020-6-27 19:30:28.0+5:30"
+        },
+        {
+            "Device": 2,
+            "Channel": "zee",
+            "Time": "2020-6-27 19:30:28.0+5:30"
+        },
+        {
+            "Device": 1,
+            "Channel": "zee",
+            "Time": "2020-6-27 19:45:28.0+5:30"
+        },
+        {
+            "Device": 1,
+            "Channel": "zee",
+            "Time": "2020-6-27 20:45:28.0+5:30"
+        },
+        {
+            "Device": 1,
+            "Channel": "zee",
+            "Time": "2020-6-27 3:0:28.0+5:30"
+        },
+        {
+            "Device": 2,
+            "Channel": "zee",
+            "Time": "2020-6-27 3:0:28.0+5:30"
+        },
+        {
+            "Device": 2,
+            "Channel": "zee",
+            "Time": "2020-6-27 19:0:28.0+5:30"
+        },
+        {
+            "Device": 2,
+            "Channel": "zee",
+            "Time": "2020-6-27 19:50:28.0+5:30"
+        },
+        {
+            "Device": 2,
+            "Channel": "zee",
+            "Time": "2020-6-27 12:50:28.0+5:30"
+        },
+        {
+            "Device": 2,
+            "Channel": "star",
+            "Time": "2020-6-27 12:30:28.0+5:30"
+        },
+        {
+            "Device": 2,
+            "Channel": "star",
+            "Time": "2020-6-27 13:3:28.0+5:30"
+        },
+        {
+            "Device": 2,
+            "Channel": "star",
+            "Time": "2020-6-27 14:3:28.0+5:30"
+        },
+        {
+            "Device": 1,
+            "Channel": "color",
+            "Time": "2020-6-27 14:3:28.0+5:30"
+        },
+        {
+            "Device": 1,
+            "Channel": "color",
+            "Time": "2020-6-27 15:3:28.0+5:30"
+        },
+        {
+            "Device": 2,
+            "Channel": "color",
+            "Time": "2020-6-27 15:3:28.0+5:30"
+        },
+        {
+            "Device": 2,
+            "Channel": "color",
+            "Time": "2020-6-27 13:16:28.0+5:30"
+        },
+        {
+            "Device": 3,
+            "Channel": "color",
+            "Time": "2020-6-27 13:16:28.0+5:30"
+        },
+        {
+            "Device": 3,
+            "Channel": "color",
+            "Time": "2020-6-27 15:16:28.0+5:30"
+        },
+        {
+            "Device": 3,
+            "Channel": "color",
+            "Time": "2020-6-27 7:16:28.0+5:30"
+        }
+    ]
+}

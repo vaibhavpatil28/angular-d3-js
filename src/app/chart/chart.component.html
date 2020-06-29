@@ -1,0 +1,17 @@
+<section>
+    <h5>Channels watched for given date : </h5>
+    <input type="datetime-local" class="form-control" id="pieChartDateInput"
+        aria-describedby="pieChartDateInput"
+        placeholder="Date And Time" step="2" (change)="channelsWatchedDateChange($event)" [value]="formatedDate">
+    <label for="pieChart"> Pie Chart : </label>
+    <div id="pieChart"></div>
+    <label for="barChart"> Bar Chart : </label>
+    <div id="barChart"></div>
+</section>
+<section>
+    <label for="barChartDateInput">Device vs Channel view Count : </label>
+    <input type="datetime-local" class="form-control" id="barChartDateInput"
+        aria-describedby="barChartDateInput"
+        placeholder="Date And Time" step="2" (change)="groupedBarChartDateChange($event)" [value]="formatedDate">
+    <div id="groupBarChart"></div>
+</section>
